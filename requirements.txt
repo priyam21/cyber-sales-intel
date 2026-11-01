@@ -1,0 +1,5 @@
+duckdb==2.0.0
+orjson==3.13.0
+pyarrow==26.0.0
+tldextract==5.4.0
+zstandard==0.25.0

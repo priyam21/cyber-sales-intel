@@ -1,0 +1,169 @@
+{
+ "companies": 361229,
+ "heldout_compromise": {
+  "label": "compromised",
+  "signals_withheld": [
+   "compromised"
+  ],
+  "positives": 16,
+  "base_rate": 4.42932322709417e-05,
+  "auc_score": 0.736,
+  "auc_score_95ci": [
+   0.595,
+   0.876
+  ],
+  "auc_size_baseline": 0.64,
+  "auc_size_baseline_95ci": [
+   0.493,
+   0.787
+  ],
+  "lift_top10pct_score": 5.0,
+  "lift_top10pct_size_baseline": 3.13
+ },
+ "heldout_verified_vuln": {
+  "label": "verified_cve",
+  "signals_withheld": [
+   "ambient_kev",
+   "compromised",
+   "heartbleed",
+   "high_epss",
+   "kev_cve",
+   "kev_edge",
+   "ransomware_cve",
+   "verified_cve"
+  ],
+  "positives": 680,
+  "base_rate": 0.0018824623715150224,
+  "auc_score": 0.858,
+  "auc_score_95ci": [
+   0.84,
+   0.876
+  ],
+  "auc_size_baseline": 0.569,
+  "auc_size_baseline_95ci": [
+   0.547,
+   0.592
+  ],
+  "lift_top10pct_score": 3.78,
+  "lift_top10pct_size_baseline": 2.21
+ },
+ "signal_lift_vs_compromise": {
+  "db_no_auth": {
+   "companies": 22,
+   "compromise_rate": 0.0909,
+   "lift_vs_base": 2052.44
+  },
+  "ransomware_cve": {
+   "companies": 224,
+   "compromise_rate": 0.0045,
+   "lift_vs_base": 100.79
+  },
+  "verified_cve": {
+   "companies": 680,
+   "compromise_rate": 0.0015,
+   "lift_vs_base": 33.2
+  },
+  "db_open": {
+   "companies": 1857,
+   "compromise_rate": 0.0011,
+   "lift_vs_base": 24.32
+  },
+  "ntlm_leak": {
+   "companies": 2622,
+   "compromise_rate": 0.0008,
+   "lift_vs_base": 17.22
+  },
+  "kev_cve": {
+   "companies": 1478,
+   "compromise_rate": 0.0007,
+   "lift_vs_base": 15.28
+  },
+  "remote_access": {
+   "companies": 3201,
+   "compromise_rate": 0.0006,
+   "lift_vs_base": 14.11
+  },
+  "eol": {
+   "companies": 40316,
+   "compromise_rate": 0.0002,
+   "lift_vs_base": 4.48
+  },
+  "ambient_kev": {
+   "companies": 46226,
+   "compromise_rate": 0.0002,
+   "lift_vs_base": 4.4
+  },
+  "high_epss": {
+   "companies": 53996,
+   "compromise_rate": 0.0002,
+   "lift_vs_base": 3.76
+  },
+  "edge_device": {
+   "companies": 6696,
+   "compromise_rate": 0.0001,
+   "lift_vs_base": 3.37
+  },
+  "self_signed": {
+   "companies": 16993,
+   "compromise_rate": 0.0001,
+   "lift_vs_base": 2.66
+  },
+  "weak_tls": {
+   "companies": 39156,
+   "compromise_rate": 0.0001,
+   "lift_vs_base": 2.31
+  },
+  "no_waf": {
+   "companies": 241135,
+   "compromise_rate": 0.0001,
+   "lift_vs_base": 1.22
+  },
+  "missing_headers": {
+   "companies": 244574,
+   "compromise_rate": 0.0,
+   "lift_vs_base": 1.11
+  },
+  "cert_expired": {
+   "companies": 20476,
+   "compromise_rate": 0.0,
+   "lift_vs_base": 1.1
+  },
+  "kev_edge": {
+   "companies": 53,
+   "compromise_rate": 0.0,
+   "lift_vs_base": 0.0
+  },
+  "heartbleed": {
+   "companies": 30,
+   "compromise_rate": 0.0,
+   "lift_vs_base": 0.0
+  },
+  "ics": {
+   "companies": 30,
+   "compromise_rate": 0.0,
+   "lift_vs_base": 0.0
+  },
+  "ai_exposed": {
+   "companies": 144,
+   "compromise_rate": 0.0,
+   "lift_vs_base": 0.0
+  },
+  "open_dir": {
+   "companies": 1600,
+   "compromise_rate": 0.0,
+   "lift_vs_base": 0.0
+  }
+ },
+ "split_half": {
+  "companies_with_4plus_ips": 21038,
+  "spearman_need": 0.625,
+  "tier_agreement": 0.939
+ },
+ "precision_audit": {
+  "p_at_10": 0.9,
+  "p_at_20": 0.85,
+  "p_at_50": 0.72,
+  "unlabelled_in_top50": [],
+  "labeler": "Claude (coding agent), from evidence in the app; see eval/precision_audit_top50.csv"
+ }
+}

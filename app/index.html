@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Exposure Radar</title>
+<meta name="description" content="Find and prioritise companies that need cybersecurity help now, ranked from internet scan signals.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='14' fill='%230f766e'/><circle cx='16' cy='16' r='8' fill='none' stroke='white' stroke-width='2'/><circle cx='16' cy='16' r='2.5' fill='white'/></svg>">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand"><span class="dot"></span>Exposure Radar <small>cybersecurity prospecting</small></div>
+  <nav class="tabs" role="tablist">
+    <button class="tab active" data-tab="accounts">Accounts</button>
+    <button class="tab" data-tab="plays">Plays &amp; campaigns</button>
+    <button class="tab" data-tab="method">How it works</button>
+  </nav>
+</header>
+
+<section id="kpis" class="kpis"></section>
+
+<main>
+  <section id="tab-accounts" class="panel active">
+    <aside class="filters">
+      <input id="q" type="search" placeholder="Search company, CVE, product…" aria-label="Search">
+      <label>Tier
+        <select id="f-tier"><option value="">All tiers</option><option>Hot</option><option>Warm</option><option>Nurture</option></select>
+      </label>
+      <label>Play <select id="f-play"><option value="">All plays</option></select></label>
+      <label>Segment <select id="f-seg"><option value="">All segments</option></select></label>
+      <label>Country <select id="f-country"><option value="">All countries</option></select></label>
+      <label>Min. internet-facing IPs <input id="f-ips" type="number" min="1" value="1"></label>
+      <label class="chk"><input id="f-reg" type="checkbox"> Regulated sectors only</label>
+      <label class="chk"><input id="f-contact" type="checkbox"> Has security contact</label>
+      <label class="chk"><input id="f-own" type="checkbox"> Owns its network (enterprise)</label>
+      <label class="chk"><input id="f-named" type="checkbox" checked> Domain-identified only</label>
+      <div class="filter-actions">
+        <button id="reset" class="ghost">Reset</button>
+        <button id="export">Export CSV</button>
+      </div>
+      <p id="count" class="muted"></p>
+    </aside>
+    <div class="list-wrap">
+      <table class="accounts">
+        <thead><tr>
+          <th>#</th><th>Company</th><th class="num">Score</th><th>Tier</th><th>Why them</th>
+          <th>Segment</th><th>Ctry</th><th class="num">IPs</th>
+        </tr></thead>
+        <tbody id="rows"></tbody>
+      </table>
+      <button id="more" class="ghost more">Show more</button>
+    </div>
+  </section>
+
+  <section id="tab-plays" class="panel">
+    <h2>Plays</h2>
+    <p class="muted">Each account is assigned the play with the most evidence behind it. Click a play to work that list.</p>
+    <div id="plays" class="cards"></div>
+    <h2>Patch-now campaigns</h2>
+    <p class="muted">Known-exploited CVEs (CISA KEV) and how many scored accounts are exposed. One CVE = one outbound campaign with a ready-made reason to call.</p>
+    <div id="campaigns" class="cards small"></div>
+  </section>
+
+  <section id="tab-method" class="panel prose" id="method"></section>
+</main>
+
+<div id="drawer" class="drawer" aria-hidden="true">
+  <button class="close" aria-label="Close">×</button>
+  <div id="detail"></div>
+</div>
+<div id="scrim" class="scrim"></div>
+
+<script src="app.js"></script>
+</body>
+</html>

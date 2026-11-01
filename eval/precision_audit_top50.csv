@@ -1,0 +1,51 @@
+rank_domain_named,entity,is_real_prospect,reason
+1,free.fr,0,consumer ISP namespace
+2,usp.br,1,university
+3,mit.edu,1,university; own netblock
+4,cnr.it,1,national research council
+5,keio.ac.jp,1,university + hospital
+6,uam.mx,1,university
+7,deutschebahn.com,1,enterprise (DB Systel netblock)
+8,viacom.com,1,enterprise (Paramount Global cert)
+9,thameswater.co.uk,1,utility (OV cert Thames Water Limited)
+10,cdc.gov,1,government agency
+11,rit.edu,1,university
+12,experian.com,1,enterprise (NetScaler AAA
+13,dattaweb.com,0,hosting provider (Dattatec)
+14,edu.hu,0,shared national schools namespace
+15,chula.ac.th,1,university
+16,berkeley.edu,1,university
+17,hthk.com,1,telco's own NetScaler gateway (corporate asset)
+18,haworth.com,1,enterprise (OV cert Haworth Inc)
+19,ncsu.edu,1,university
+20,acquire.io,1,SaaS company
+21,nexity.fr,1,enterprise (OV cert Nexity)
+22,mq.edu.au,1,university
+23,icann.org,1,non-profit org
+24,kth.se,1,university
+25,turningtechnologies.com,1,software company
+26,logista.com,1,enterprise (Ivanti portal)
+27,thenew.tv,0,unclear small k3s cluster on Hetzner
+28,uoc.gr,1,university
+29,sc.edu,1,university
+30,3ds.com,1,enterprise (Dassault Systemes)
+31,viewcam.me,0,camera DDNS service
+32,aarcorp.com,1,enterprise (AAR Corp)
+33,fvds.ru,0,hosting provider
+34,mta.hu,1,academy of sciences
+35,k12.sd.us,1,school district / state
+36,blizoo.bg,0,consumer ISP
+37,kmitl.ac.th,1,university
+38,ptr.network,0,hosting rDNS namespace
+39,unam.mx,1,university
+40,superdomainzone.com,0,parking / hosting
+41,arumovistar.es,0,ISP customer subdomain (real company is the customer)
+42,twc1.net,0,hosting (Timeweb Cloud)
+43,sharepoint.com,0,Microsoft multi-tenant SaaS
+44,prefeitura.sp.gov.br,1,"municipal government (OV cert PRODAM, Sao Paulo city IT)"
+45,tyc.edu.tw,1,regional education network (Taoyuan Department of Education)
+46,uzpak.uz,0,"telecom namespace (Uzbektelekom netblock, customer sites)"
+47,nccu.edu.tw,1,university (National Chengchi University)
+48,ipsj.or.jp,1,professional society (OV cert Information Processing Society of Japan)
+49,truni.sk,1,university
+50,clodocd.com,0,hosting provider (Clodo Cloud)
